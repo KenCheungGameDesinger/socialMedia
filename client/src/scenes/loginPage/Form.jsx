@@ -66,7 +66,7 @@ const Form = () => {
     formData.append("picturePath", values.picture.name);
 
     const savedUserResponse = await fetch(
-      `${process.env.SERVER_URL}/auth/register`,
+      `https://tourgo-community.onrender.com/auth/register`,
       {
         method: "POST",
         body: formData,
@@ -82,7 +82,7 @@ const Form = () => {
 
   const login = async (values, onSubmitProps) => {
     console.log("login");
-    const loggedInResponse = await fetch(`${process.env.SERVER_URL}/auth/login`, {
+    const loggedInResponse = await fetch(`https://tourgo-community.onrender.com/auth/login`, {
       method: "POST",
       headers: { "Content-Type": "application/json" },
       body: JSON.stringify(values),

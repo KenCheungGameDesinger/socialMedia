@@ -9,7 +9,7 @@ const UserImage = ({ image, size = "60px" }) => {
         width={size}
         height={size}
         alt="user"
-        src={`${process.env.SERVER_URL}/assets/${image}`}
+        src={`https://tourgo-community.onrender.com/assets/${image}`}
       />
     </Box>
   );

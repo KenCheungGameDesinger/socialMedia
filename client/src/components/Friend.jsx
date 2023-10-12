@@ -24,7 +24,7 @@ const Friend = ({ friendId, name, subtitle, userPicturePath }) => {
 
   const patchFriend = async () => {
     const response = await fetch(
-      `${process.env.SERVER_URL}/users/${_id}/${friendId}`,
+      `https://tourgo-community.onrender.com/users/${_id}/${friendId}`,
       {
         method: "PATCH",
         headers: {
