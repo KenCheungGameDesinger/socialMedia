@@ -3,7 +3,7 @@ import Friend from "components/Friend";
 import WidgetWrapper from "components/WidgetWrapper";
 import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
-import { SERVER_URL } from "serverurl-config";
+
 import { setFriends } from "state";
 
 const FriendListWidget = ({ userId }) => {
@@ -14,7 +14,7 @@ const FriendListWidget = ({ userId }) => {
 
   const getFriends = async () => {
     const response = await fetch(
-      `${SERVER_URL}/users/${userId}/friends`,
+      `${process.env.SERVER_URL}/users/${userId}/friends`,
       {
         method: "GET",
         headers: { Authorization: `Bearer ${token}` },

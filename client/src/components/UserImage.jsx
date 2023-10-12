@@ -1,5 +1,5 @@
 import { Box } from "@mui/material";
-import { SERVER_URL } from "serverurl-config";
+
 
 const UserImage = ({ image, size = "60px" }) => {
   return (
@@ -9,7 +9,7 @@ const UserImage = ({ image, size = "60px" }) => {
         width={size}
         height={size}
         alt="user"
-        src={`${SERVER_URL}/assets/${image}`}
+        src={`${process.env.SERVER_URL}/assets/${image}`}
       />
     </Box>
   );
