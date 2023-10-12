@@ -1,6 +1,6 @@
 # socialMedia
 A social media web app with basic functionalities that I created after following the instruction from a Youtube video.
-
+[Source Code](https://github.com/hungvancap/socialMedia?ref=reactjsexample.com)
 
 # Screenshots:
 ![image](https://github.com/hungvancap/socialMedia/assets/51280437/99d920b2-c2e4-4e5e-b95e-6dc12857ed64)
