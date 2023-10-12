@@ -5,6 +5,8 @@ import { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 
 import { setFriends } from "state";
+import { config } from "dotenv";
+config();
 
 const FriendListWidget = ({ userId }) => {
   const dispatch = useDispatch();

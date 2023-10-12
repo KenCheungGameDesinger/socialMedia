@@ -1,7 +1,10 @@
 import { Box, Typography, useTheme, useMediaQuery } from "@mui/material";
 import Form from "./Form";
+import { config } from "dotenv";
+config();
 
 const LoginPage = () => {
+  console.log(process.env.SERVER_URL);
   const theme = useTheme();
   const isNonMobileScreens = useMediaQuery("(min-width: 1000px)");
   return (
