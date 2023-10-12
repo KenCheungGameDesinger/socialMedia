@@ -1,6 +1,4 @@
 import { Box } from "@mui/material";
-import { config } from "dotenv";
-config();
 
 
 const UserImage = ({ image, size = "60px" }) => {
