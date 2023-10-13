@@ -53,7 +53,7 @@ const Navbar = () => {
             },
           }}
         >
-          FriendSphere
+          TourGO
         </Typography>
         {isNonMobileScreens && (
           <FlexBetween
